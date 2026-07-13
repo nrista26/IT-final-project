@@ -1,0 +1,403 @@
+/* ==========================
+   RISTAGOTDOXED STYLE.CSS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    background:#f890ba;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
+
+}
+
+
+/* PAGE WIDTH */
+
+header,
+.slider,
+.page-banner,
+.content,
+.gallery,
+.post,
+footer{
+
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+/* HEADER */
+
+header{
+
+    background:#ffc1dc; 
+    padding:20px;
+    text-align:center;
+
+}
+
+
+.logo h1{
+
+    color:#d63384;
+    font-size:40px;
+
+}
+
+
+nav ul{
+
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:15px;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+    color:#8a1455;
+    font-weight:bold;
+    font-size:18px;
+
+}
+
+
+nav a:hover,
+nav .active{
+
+    color:rgb(244, 153, 237);
+
+}
+
+
+
+/* BANNER */
+
+.page-banner{
+
+    background:#f49fc4;
+    text-align:center;
+    padding:40px;
+
+}
+
+
+.page-banner h2{
+
+    color:#c2185b;
+    font-size:35px;
+
+}
+
+
+/* SLIDER */
+
+.slider img{
+
+    width:100%;
+    height:400px;
+    object-fit:cover;
+
+}
+
+
+
+/* CONTENT */
+
+.content{
+
+    width:80%;
+    margin:40px auto;
+    background:#ea95bd;
+    padding:30px;
+    border-radius:20px;
+
+}
+
+
+.content h2,
+.content h3{
+
+    color:#d63384;
+    margin-bottom:15px;
+
+}
+
+
+.content p{
+
+    line-height:1.7;
+    margin-bottom:20px;
+
+}
+
+
+.content a{
+
+    color:#c2185b;
+    font-weight:bold;
+
+}
+
+
+.content a:hover{
+
+    color:#8a1455;
+
+}
+
+
+
+/* CARDS */
+
+.features{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+
+}
+
+
+.card{
+
+    background:#cb618d;
+    padding:25px;
+    width:200px;
+    text-align:center;
+    border-radius:20px;
+
+}
+
+
+.card h3{
+
+    font-size:30px;
+
+}
+
+
+
+/* GALLERY */
+
+.gallery{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    width:80%;
+    margin:40px auto;
+
+}
+
+
+.gallery img{
+
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+
+}
+
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* BLOG */
+
+.post{
+
+    background:#e75572;
+    width:80%;
+    margin:30px auto;
+    padding:30px;
+    border-radius:20px;
+
+}
+
+
+.post img{
+
+    width:100%;
+    max-height:400px;
+    object-fit:cover;
+    border-radius:15px;
+
+}
+
+
+.date{
+
+    color:#d63384;
+    font-style:italic;
+
+}
+
+
+
+/* CONTACT FORM */
+
+form{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+
+input,
+textarea{
+
+    padding:12px;
+    border:2px solid #ffc1dc;
+    border-radius:10px;
+
+}
+
+
+textarea{
+
+    height:150px;
+
+}
+
+
+input[type="submit"]{
+
+    background:#d63384;
+    color:#ffffff;
+    cursor:pointer;
+    font-size:18px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+    background:#ffc1dc;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+
+}
+
+
+footer a{
+
+    color:#4a0033;
+    text-decoration:underline;
+
+}
+
+
+footer a:hover{
+
+    color:#8a1455;
+
+}
+
+
+/* IMAGE SLIDER */
+
+.slider{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+}
+
+
+.slides{
+
+    display:flex;
+    width:400%;
+    height:400px;
+    animation:slide 16s infinite;
+
+}
+
+
+.slides img{
+
+    width:25%;
+    height:400px;
+    object-fit:cover;
+
+}
+.thumb {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    border: 2px solid #ffb6c1;
+}
+
+@keyframes slide{
+
+
+    0%{
+        transform:translateX(0);
+    }
+
+
+    25%{
+        transform:translateX(0);
+    }
+
+
+    30%{
+        transform:translateX(-25%);
+    }
+
+
+    50%{
+        transform:translateX(-25%);
+    }
+
+
+    55%{
+        transform:translateX(-50%);
+    }
+
+
+    75%{
+        transform:translateX(-50%);
+    }
+
+
+    80%{
+        transform:translateX(-75%);
+    }
+
+
+    100%{
+        transform:translateX(-75%);
+    }
+
+}
